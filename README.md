@@ -21,6 +21,7 @@ The extension will:
   tab without finishing the captcha).
 
 Click the toolbar icon any time to see status or trigger a manual attempt.
+<img width="267" height="160" alt="karuta-auto-vote-extension-img" src="https://github.com/user-attachments/assets/7831c6f6-bcc1-4257-9894-95eeb3387d3b" />
 
 ## Caveats
 
