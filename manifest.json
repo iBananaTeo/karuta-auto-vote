@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Karuta Top.gg Auto-Voter",
+  "version": "1.0.0",
+  "description": "Opens the Karuta vote page every 12 hours and clicks the vote button. You still solve the captcha.",
+  "permissions": ["alarms", "storage", "tabs"],
+  "host_permissions": ["https://top.gg/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://top.gg/bot/646937666251915264/vote*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Karuta Vote"
+  }
+}
